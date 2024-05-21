@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="
+        http://www.springframework.org/schema/beans 
+        http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<bean id="prod" class="com.test.Product">
+		<property name="pid" value="101" />
+		<property name="pcode" value="Random-Code" />
+		<property name="colors">
+			<set>
+				<value>RED</value>
+				<value>BLUE</value>
+				<value>GREEN</value>
+				<value>PINK</value>
+				<null></null>
+				<null></null>
+			</set>
+		</property>
+		<property name="cost">
+			<list>
+				<value>200</value>
+				<value>300</value>
+				<value>400</value>
+				<value>300</value>
+				<value>300</value>
+				<null></null>
+				<null></null>
+				<null></null>
+			</list>
+		</property>
+		<property name="data">
+			<map>
+				<entry key="C101" value="Java" />
+				<entry key="C102" value="PHP" />
+				<entry key="C103" value="JSP" />
+				<entry key="C104" value="JS" />
+			</map>
+		</property>
+		<property name="info">
+			<props>
+				<prop key="P1">ABC</prop>
+				<prop key="P2">RED</prop>
+				<prop key="P3">LMN</prop>
+			</props>
+		</property>
+	</bean>
+</beans>

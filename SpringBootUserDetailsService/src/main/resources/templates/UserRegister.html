@@ -1,0 +1,20 @@
+<html xmlns:th="https://www.thymeleaf.org/">
+<head>
+	<title>User Registration</title>
+</head>
+<body>
+<pre>
+	<form method="post" action="save">
+	NAME 	 : <input type="text" name="name">
+	EMAIL 	 : <input type="text" name="email">
+	PASSWORD : <input type="password" name="password">
+	ROLE	 : 
+			<input type="checkbox" name="roles" value="ADMIN"> ADMIN
+			<input type="checkbox" name="roles" value="EMPLOYEE"> Employee
+			
+			<button type="submit">Add User</button>
+	</form>
+<div th:text="${message}"></p>
+</pre>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<html xmlns:th="https://www.thymeleaf.org/">
+	<head>
+		<title>Employee Register</title>
+	</head>
+	<body>
+		<h3>Welcome to Employee Register Page</h3>
+		<form th:action="@{/employee/save}" method="POST">
+		<pre>
+			NAME	: <input type="text" name="empName"/>
+			SALARY	: <input type="text" name="empSal"/>
+			DEPT	: <select name="empDepartment">
+						<option value="">-SELECT-</option>
+						<option value="DEV">DEV</option>
+						<option value="QA">QA</option>
+						<option value="BA">BA</option>
+				   </select>
+			GENDER	: 
+				<input type="radio" name="empGender" value="Male"/>Male 
+				<input type="radio" name="empGender" value="Female"/>Female
+				
+			ADDRESS	: 
+				<textarea name="empAddress"></textarea>
+			
+			<button type="submit">CREATE</button>  
+		</pre>
+		</form>
+		[[${message}]]
+	</body>
+</html>

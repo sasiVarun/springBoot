@@ -1,0 +1,16 @@
+my:
+  app:
+    info:
+      CLIENT: NIT
+      VER: 2.6AD
+    models:
+    - A1
+    - A2
+    - A3
+    - A4
+    pcode: Pen
+    pcost: 26.78
+    pid: 10
+    vob:
+      vcode: MIT
+      vid: 101
